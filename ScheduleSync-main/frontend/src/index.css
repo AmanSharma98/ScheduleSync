@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Custom CSS for the scrollable container */
+.scrollable-container {
+    overflow-x: auto; /* Change to horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    display: flex; /* Align children in a row */
+    gap: 16px; /* Adjust the gap between cards as needed */
+}
+
+/* Ensure the cards do not shrink and have a fixed width */
+.scrollable-container > div {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 400px; /* Fixed width for each card */
+}

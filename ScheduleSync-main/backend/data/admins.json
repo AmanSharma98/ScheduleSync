@@ -1,0 +1,11 @@
+[
+    {
+      "email": "admin1@example.com",
+      "password": "$2b$10$abc123...hashedpassword"
+    },
+    {
+      "email": "admin2@example.com",
+      "password": "$2b$10$xyz456...hashedpassword"
+    }
+  ]
+  
